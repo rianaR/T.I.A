@@ -11,7 +11,7 @@ endfunction
 
 //lena = double(imread("lena.bmp"));
 lena = imread("images/lena.bmp");
-imshow(lena)
+figure; ShowImage(lena, "Lena")
 h = ones(5,5)/25;
 [imFiltre] = filtre(lena,h);
-figure;ShowImage(imFiltre, "image lissée/floutée");
+figure; ShowImage(imFiltre, "Image lissée/floutée");
