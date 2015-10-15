@@ -1,6 +1,6 @@
 xdel(winsid());
 clown = double((imread("images/CLOWN_LUMI2.BMP")));
-
+figure; ShowImage(clown/255, "Clown original");
 //Histogramme de l'image là où il y a des valeurs
 [cf, ind] = histc(min(clown(:)):max(clown(:)), clown, normalization = %f);
 
@@ -19,5 +19,5 @@ for num_rows = 1:512
 end;
 
 //Affichage de l'image et son histogramme
-imshow(clownEtale/255);
+figure; ShowImage(clownEtale/255, "Clown avec cumul");
 figure;histplot(255,clownEtale);
