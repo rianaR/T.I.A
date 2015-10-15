@@ -3,16 +3,20 @@
 exec("grad2.sci");
 exec("div2.sci");
 
-im = [1,2;5,6]
-dt= 0.01;
+imOrigins = double(imread("Images/lena.bmp"));
+im = double(imread("Images/lena.bmp"));
 
-
-nbIterations = 3;
+dt=0.25;
+nbIterations = 20;
 
 for i=1:nbIterations
 
-    g=grad2(im)
-    d=div2(g)
-    im=im+dt*d
-    im
+    g=grad2(im);
+    d=div2(g);
+    im=im+dt*d;
+    im;
 end
+
+imshow(im/255);
+
+imshow((im-imOrigins)/255);
