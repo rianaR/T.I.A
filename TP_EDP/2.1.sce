@@ -25,7 +25,7 @@ for i=1:nbIterations
     result=result+dt*d;
 end
 result
-imshow(result/255);
+ShowImage(uint8(result), "ShowImage pu*ain de me*de");
 imwrite(result/255, "lena_EDPfilter.jpg");
 
 imwrite((result-imOrigins)/255, "lena_EDPdiffOrig.jpg");
