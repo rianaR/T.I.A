@@ -7,11 +7,10 @@ function dil=Dilatation(im,x,y)
 
 % --> COMPLETEZ LA FONCTION
     [lines, columns] = size(im);
-    dil = zeros(size(im));
-    for l=1:lines
-        for c=1:columns
-            rect = im(max(1,l-y):min(lines, l+y),max(1,c-x):min(columns,c+x));
-            dil(l,c) = max(rect(:));
+    for i=1:lines
+        for j=1:columns
+            rect = im(max(1,i-y):min(lines, i+y),max(1,j-x):min(columns,j+x)
+            dil(i,j) = 
         end
     end
 end

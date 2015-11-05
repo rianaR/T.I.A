@@ -15,6 +15,7 @@ function mtdt=morphofil(dep,x,y)
 ouv = uint8(Dilatation(Erosion(dep, x, y), x, y));
 
 mtdt = dep - ouv;
+imwri
 % -- Affichage
 figure;
 imagesc(mtdt); axis off; axis image; colormap gray;
