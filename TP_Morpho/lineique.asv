@@ -8,11 +8,9 @@ function bin=lineique(name1,name2, x, y, bas, haut)
 %                    s'apelle ign1.png l'appel se fait avec name1='ign1.png')
 %           name2 -> nom pour enregistrer l'image en sortie (ex:
 %           'result.png')
-%           x -> Paramètre de la largeur de l'élément structurant (L =
-%           2x+1)
-%           y-> Paramètre de la hauteur de l'élément structurant (H = 2y+1)
-%           bas -> valeur basse du seuillage par hysteresis 
-%           haut -> valeur haute du seuillage par hysteresis 
+%           x -> Paramètre de la largeur de l'élément structurant (
+%           y-> Paramètre de la hauteur de l'élément structurant
+%           %%%% Ajoutez les parametres que vous jugez necessaires  
 %
 % Sortie  : bin  -> image binarisee du reseau routier
 %------------------------------------------------------

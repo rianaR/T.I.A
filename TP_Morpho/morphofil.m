@@ -12,9 +12,9 @@ function mtdt=morphofil(dep,x,y)
 %--------------------------------------------------------------------------
 
 % --> COMPLETEZ LA FONCTION
-ouv = uint8(Dilatation(Erosion(dep, x, y), x, y));
+ouv = double(Dilatation(Erosion(dep, x, y), x, y));
 
-mtdt = dep - ouv;
+mtdt = double(dep) - ouv;
 % -- Affichage
 figure;
 imagesc(mtdt); axis off; axis image; colormap gray;
