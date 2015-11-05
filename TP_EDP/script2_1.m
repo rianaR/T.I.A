@@ -1,4 +1,4 @@
-%2.1.SCE
+%2.1.m
 
 imOrigins = double(imread('Images/lena.bmp'));
 im = double(imread('Images/lena.bmp'));
